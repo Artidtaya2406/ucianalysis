@@ -4,12 +4,19 @@ import pandas as pd
 #st.title("💡Website Developing using Python💡")
 #st.header("💡 Website Developing using Python 💡")
 
-st.subheader("✨💛 Artidtaya Pannin 💛✨")
+#st.subheader("✨💛 Artidtaya Pannin 💛✨")
 
 
 dt=pd.read_csv('./data/seattle-weather.csv')
+html_1 = """
+<div style="background-color:#F7DC6F;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+<center><h5>✨💛 สถิติข้อมูลสภาพอากาศ Weather 💛✨</h5></center>
+</div>
+"""
+st.markdown(html_1, unsafe_allow_html=True)
+st.markdown("")
 
-st.subheader("ข้อมูลสภาพอากาศ Weather")
+#st.subheader("ข้อมูลสภาพอากาศ Weather")
 st.write(dt.head(10))
 #Index(['precipitation', 'temp_max', 'temp_min', 'wind',
 #       'variety'],
