@@ -8,7 +8,7 @@ def load_lottieurl(url: str):
         return None
     return r.json()
 
-lottie_url_hello = "https://lottie.host/23ec1801-ad1c-4a1f-975b-0ba5e6e1e7cf/FtIRnquwn4.json"
+lottie_url_hello = "https://lottie.host/f14ccc0b-1af9-43c6-bfed-7572d3681366/eKtdfMj042.json"
 lottie_hello = load_lottieurl(lottie_url_hello)
 st_lottie(lottie_hello,key="hello")
 
