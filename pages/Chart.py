@@ -4,7 +4,7 @@ import pandas as pd
 #st.title("💡Website Developing using Python💡")
 #st.header("💡 Website Developing using Python 💡")
 
-st.subheader("✨💛 Artidtaya Pannin 💛✨")
+#st.subheader("✨💛 Artidtaya Pannin 💛✨")
 
 
 dt=pd.read_csv('./data/seattle-weather.csv')
@@ -16,7 +16,7 @@ dt=pd.read_csv('./data/seattle-weather.csv')
 
 html_1 = """
 <div style="background-color:#52BE80;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h5>กราฟแสดงข้อมูลสภาพอากาศ</h5></center>
+<center><h5>✨💛กราฟแสดงข้อมูลสภาพอากาศ✨💛</h5></center>
 </div>
 """
 st.markdown(html_1, unsafe_allow_html=True)
