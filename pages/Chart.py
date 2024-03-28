@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.title("💡Website Developing using Python💡")
+#st.title("💡Website Developing using Python💡")
 #st.header("💡 Website Developing using Python 💡")
 
 st.subheader("✨💛 Artidtaya Pannin 💛✨")
@@ -22,14 +22,6 @@ cl2.write(dt['temp_max'].sum())
 cl3.write(dt['temp_min'].sum())
 cl4.write(dt['wind'].sum())
 
-st.write("กราฟแท่ง")
-a=dt['precipitation'].sum()
-b=dt['temp_max'].sum()
-c=dt['temp_min'].sum()
-d=dt['wind'].sum()
-dx=[a,b,c,d]
-cx=pd.DataFrame(dx,index=["precipitation", "temp_max", "temp_min","wind"])
-st.bar_chart(cx)
 
 st.write('ค่าเฉลี่ย')
 cl11,cl12,cl13,cl14=st.columns(4)
@@ -37,15 +29,6 @@ cl11.write(dt['precipitation'].mean())
 cl12.write(dt['temp_max'].mean())
 cl13.write(dt['temp_min'].mean())
 cl14.write(dt['wind'].mean())
-
-st.write("Area_Chart")
-a=dt['precipitation'].mean()
-b=dt['temp_max'].mean()
-c=dt['temp_min'].mean()
-d=dt['wind'].mean()
-dxt=[a,b,c,d]
-cxx=pd.DataFrame(dxt,index=["precipitation", "temp_max", "temp_min","wind"])
-st.area_chart(cxx)
 
 
 st.write('ค่ามากที่สุด')
