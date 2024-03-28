@@ -78,16 +78,24 @@ cl21.write(dt['precipitation'].max())
 cl22.write(dt['temp_max'].max())
 cl23.write(dt['temp_min'].max())
 cl24.write(dt['wind'].max())
+st.write("กราฟแท่ง")
+a=dt['precipitation'].sum()
+b=dt['temp_max'].sum()
+c=dt['temp_min'].sum()
+d=dt['wind'].sum()
+dx=[a,b,c,d]
+cx=pd.DataFrame(dx,index=["precipitation", "temp_max", "temp_min","wind"])
+st.bar_chart(cx)
 
-import numpy as np
-import matplotlib.pyplot as plt
-labels = ['precipitation','temp_max', 'temp_min','wind']
-sizes = [35,25,15,25]
-explode = (0, 0.1,0,0) 
-fig1, ax1 = plt.subplots()
-ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
-        shadow=True, startangle=90)
-st.pyplot(fig1)
+#import numpy as np
+#import matplotlib.pyplot as plt
+#labels = ['precipitation','temp_max', 'temp_min','wind']
+#sizes = [35,25,15,25]
+#explode = (0, 0.1,0,0) 
+#fig1, ax1 = plt.subplots()
+#ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
+#        shadow=True, startangle=90)
+#st.pyplot(fig1)
 
 
 st.write('ค่าน้อยที่สุด')
