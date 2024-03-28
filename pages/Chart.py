@@ -62,6 +62,14 @@ cl11.write(dt['precipitation'].mean())
 cl12.write(dt['temp_max'].mean())
 cl13.write(dt['temp_min'].mean())
 cl14.write(dt['wind'].mean())
+st.write("กราฟแท่ง")
+a=dt['precipitation'].sum()
+b=dt['temp_max'].sum()
+c=dt['temp_min'].sum()
+d=dt['wind'].sum()
+dx=[a,b,c,d]
+cx=pd.DataFrame(dx,index=["precipitation", "temp_max", "temp_min","wind"])
+st.bar_chart(cx)
 
 
 st.write('ค่ามากที่สุด')
