@@ -9,12 +9,12 @@ st.subheader("✨💛 Artidtaya Pannin 💛✨")
 
 dt=pd.read_csv('./data/seattle-weather.csv')
 
-st.subheader("ข้อมูลดอกไม้ Iris")
+st.subheader("ข้อมูลสภาพอากาศ Weather")
 st.write(dt.head(10))
 #Index(['precipitation', 'temp_max', 'temp_min', 'wind',
 #       'variety'],
 
-st.subheader("สถิติข้อมูลดอกไม้ Iris")
+st.subheader("สถิติข้อมูลสภาพอากาศ Weather")
 st.write('ผลรวม')
 cl1,cl2,cl3,cl4=st.columns(4)
 cl1.write(dt['precipitation'].sum())
