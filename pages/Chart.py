@@ -37,12 +37,23 @@ st.markdown("")
 
 
 #st.subheader("สถิติข้อมูลสภาพอากาศ Weather")
+
 st.write('ผลรวม')
 cl1,cl2,cl3,cl4=st.columns(4)
 cl1.write(dt['precipitation'].sum())
 cl2.write(dt['temp_max'].sum())
 cl3.write(dt['temp_min'].sum())
 cl4.write(dt['wind'].sum())
+import numpy as np
+import matplotlib.pyplot as plt
+labels = ['precipitation','temp_max', 'temp_min','wind']
+sizes = [35,25,15,25]
+explode = (0, 0.1,0,0) 
+fig1, ax1 = plt.subplots()
+ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
+        shadow=True, startangle=90)
+st.pyplot(fig1)
+
 
 
 st.write('ค่าเฉลี่ย')
