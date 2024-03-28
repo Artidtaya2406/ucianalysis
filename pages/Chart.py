@@ -40,7 +40,7 @@ cl24.write(dt['wind'].max())
 
 import numpy as np
 import matplotlib.pyplot as plt
-labels = ['Men', 'Women','','']
+labels = ['sum','mean', 'max','min']
 sizes = [35,25,15,25]
 explode = (0, 0.1,0,0) 
 fig1, ax1 = plt.subplots()
