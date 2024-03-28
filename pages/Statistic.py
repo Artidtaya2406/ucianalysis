@@ -9,7 +9,7 @@ import pandas as pd
 
 dt=pd.read_csv('./data/seattle-weather.csv')
 html_1 = """
-<div style="background-color:#F7DC6F;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+<div style="background-color:#D7BDE2;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h5>✨💛 สถิติข้อมูลสภาพอากาศ Weather 💛✨</h5></center>
 </div>
 """
