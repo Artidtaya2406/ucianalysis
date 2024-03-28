@@ -105,6 +105,11 @@ cl32.write(dt['temp_max'].min())
 cl33.write(dt['temp_min'].min())
 cl34.write(dt['wind'].min())
 
-st.write("Line_Chart")
-cc=[3,8,1,10]
-st.line_chart(cc)
+st.write("กราฟแท่ง")
+a=dt['precipitation'].sum()
+b=dt['temp_max'].sum()
+c=dt['temp_min'].sum()
+d=dt['wind'].sum()
+dx=[a,b,c,d]
+cx=pd.DataFrame(dx,index=["precipitation", "temp_max", "temp_min","wind"])
+st.bar_chart(cx)
