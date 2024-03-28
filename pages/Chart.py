@@ -9,8 +9,8 @@ st.subheader("✨💛 Artidtaya Pannin 💛✨")
 
 dt=pd.read_csv('./data/seattle-weather.csv')
 
-st.subheader("ข้อมูลสภาพอากาศ Weather")
-st.write(dt.head(10))
+#st.subheader("ข้อมูลสภาพอากาศ Weather")
+#st.write(dt.head(10))
 #Index(['precipitation', 'temp_max', 'temp_min', 'wind',
 #       'variety'],
 
