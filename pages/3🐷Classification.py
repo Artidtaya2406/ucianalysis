@@ -80,10 +80,10 @@ if st.button("ทำนายผล"):
    out=Knn_model.predict(x_input)
 
    if out[0]==2:
- #     st.image("./pic/iris1.jpg")
+      st.image("./pic/smile.png")
       st.header("ไม่เป็นมะเร็ง")
    else:
- #     st.image("./pic/iris3.jpg")  
+      st.image("./pic/sad.jpngpg")  
       st.header("เป็นมะเร็ง")
    st.button("ไม่ทำนายผล")
 else :
