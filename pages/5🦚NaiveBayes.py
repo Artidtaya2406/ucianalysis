@@ -13,7 +13,7 @@ y = df['variety']
 
 html_1 = """
 <div style="background-color:#76D7C4;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h4>การทำนายข้อมูลโรคมะเร็งเต้านม</h4></center>
+<center><h4>การนำเสนอข้อมูลด้วยเทคนิค NaiveBayes</h4></center>
 </div>
 """
 st.markdown(html_1, unsafe_allow_html=True)
