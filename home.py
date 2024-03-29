@@ -10,6 +10,7 @@ def load_lottieurl(url: str):
 
 st.title("การประยุกต์ใช้งาน Machine learning")
 st.subheader(" บนเว็บ By นางสาวอาทิตยา พันธ์นิล สาขาวิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์และเทคโนโลยีมหาวิทยาลัยราชภัฏนครปฐม")
+st.subheader(" สาขาวิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์และเทคโนโลยีมหาวิทยาลัยราชภัฏนครปฐม")
 lottie_url_hello = "https://lottie.host/f14ccc0b-1af9-43c6-bfed-7572d3681366/eKtdfMj042.json"
 lottie_hello = load_lottieurl(lottie_url_hello)
 st_lottie(lottie_hello,key="hello")
