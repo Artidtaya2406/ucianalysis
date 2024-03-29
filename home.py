@@ -21,5 +21,4 @@ st.page_link("pages/3🐷KNNClassification.py", label="การนำเสน�
 st.page_link("pages/4🐱DecisionTreeClassify.py", label="การนำเสนอข้อมูลด้วย DecisionTree", icon="4️⃣", disabled=False)
 st.page_link("pages/5🦚NaiveBayes.py", label="การนำเสนอข้อมูลด้วย NaiveBayes", icon="5️⃣", disabled=False)
 st.page_link("pages/6🐋Regression.py", label="การนำเสนอข้อมูลด้วย Regression", icon="6️⃣", disabled=False)
-
 st.page_link("https://www.kaggle.com/datasets/ananthr1/weather-prediction", label="ชุดข้อมูลสภาพอากาศ", icon="🌎")
