@@ -67,8 +67,8 @@ if st.button("ทำนายผล"):
        'UniformityofCellShape', 'MarginalAdhesion', 'SingleEpithelialCellSize',
        'BareNuclei', 'BlandChromatin', 'NormalNucleoli', 'Mitoses']
 
-   X = dt.[cols]
-   y = dt.Class   
+   X = dt[cols]
+   y = dt['Class   '] 
 
    Knn_model = KNeighborsClassifier(n_neighbors=3)
    Knn_model.fit(X, y)
