@@ -11,7 +11,7 @@ df = pd.read_csv("./data/iris.csv")
 X = df.drop('variety',axis=1)
 y = df['variety']
 
-  html_1 = """
+html_1 = """
 <div style="background-color:#76D7C4;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h4>การทำนายข้อมูลโรคมะเร็งเต้านม</h4></center>
 </div>
