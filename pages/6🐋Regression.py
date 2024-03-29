@@ -5,7 +5,7 @@ from sklearn.preprocessing import PolynomialFeatures
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score,mean_squared_error
-
+ st.image('./pic/stock.png')
 st.title("การพยากรณ์ข้อมูลด้วยเทคนิค Linear Regression")
 st.header("การพยากรณ์ข้อมูล tock_index_price")
 
