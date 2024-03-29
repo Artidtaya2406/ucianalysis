@@ -83,7 +83,7 @@ if st.button("ทำนายผล"):
       st.image("./pic/smile.png")
       st.header("ไม่เป็นมะเร็ง")
    else:
-      st.image("./pic/sad.jpngpg")  
+      st.image("./pic/sad.png")  
       st.header("เป็นมะเร็ง")
    st.button("ไม่ทำนายผล")
 else :
