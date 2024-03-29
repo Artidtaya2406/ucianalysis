@@ -31,10 +31,8 @@ if st.button("พยากรณ์"):
    elif  y_predict2=='Versicolor'; 
        st.image('./pic/Versicolor.jpg')
        st.write(y_predict2)
-   elif  y_predict2=='Virginica'; 
-       st.image('./pic/Virginica.jpg')
-       st.write(y_predict2)
     else:
+       st.image('./pic/Virginica.jpg')
        st.write(y_predict2)
     st.button("ไม่พยากรณ์")
 else:
