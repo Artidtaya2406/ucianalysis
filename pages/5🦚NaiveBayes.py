@@ -25,7 +25,7 @@ X = df.drop('variety',axis=1)
 y = df['variety']
 
 html_1 = """
-<div style="background-color:#76D7C4;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+<div style="background-color:#F5B7B1;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h4>การนำเสนอข้อมูลด้วยเทคนิค NaiveBayes</h4></center>
 </div>
 """
