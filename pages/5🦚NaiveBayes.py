@@ -6,6 +6,19 @@ from sklearn.naive_bayes import GaussianNB
 import pandas as pd
 import streamlit as st
 
+from streamlit_lottie import st_lottie
+from streamlit_lottie import st_lottie
+import requests
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+lottie_url_hello = "https://lottie.host/8aaee143-da0b-449e-997f-289e2618e341/mdCBypvI4K.json"
+lottie_hello = load_lottieurl(lottie_url_hello)
+st_lottie(lottie_hello,key="hello")
+
 # โหลดข้อมูล Iris
 df = pd.read_csv("./data/iris.csv")
 X = df.drop('variety',axis=1)
