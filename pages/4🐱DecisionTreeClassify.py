@@ -25,19 +25,17 @@ ptL=st.number_input('Insert petallength')
 if st.button("พยากรณ์"):
     x_input=[[spW,spL,ptW,ptL]] # ใส่ข้อมูลสำหรับการจำแนกข้อมูล
     y_predict2=dtree.predict(x_input)
-    if y_predict2=='';
-       st.image('./pic/Setosa.jpg'')
+    if y_predict2=='Setosa';
+       st.image('./pic/Setosa.jpg')
        st.write(y_predict2)
-   elif  y_predict2==''; 
-       st.image('./pic/Versicolor.jpg'')
+   elif  y_predict2=='Versicolor'; 
+       st.image('./pic/Versicolor.jpg')
        st.write(y_predict2)
-   elif  y_predict2==''; 
-       st.image('./pic/Virginica.jpg'')
+   elif  y_predict2=='Virginica'; 
+       st.image('./pic/Virginica.jpg')
        st.write(y_predict2)
     else:
-
        st.write(y_predict2)
-
     st.button("ไม่พยากรณ์")
 else:
     st.button("ไม่พยากรณ์")
