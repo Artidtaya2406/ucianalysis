@@ -9,7 +9,7 @@ def load_lottieurl(url: str):
     return r.json()
 
 st.title("การประยุกต์ใช้งาน Machine learning")
-st.subheader(" บนเว็บ By นางสาวอาทิตยา พันธ์นิล )
+st.subheader(" บนเว็บ By นางสาวอาทิตยา พันธ์นิล")
 st.subheader(" สาขาวิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์และเทคโนโลยีมหาวิทยาลัยราชภัฏนครปฐม")
 lottie_url_hello = "https://lottie.host/f14ccc0b-1af9-43c6-bfed-7572d3681366/eKtdfMj042.json"
 lottie_hello = load_lottieurl(lottie_url_hello)
